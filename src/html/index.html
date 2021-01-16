@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城-首页</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <link rel="stylesheet" href="../font_jay5d8ed4q9/iconfont.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <div>
+            <div class="header">
+                <div id="topbarBannerWrapper">
+                    <div class="topbar-banner-wrapper">
+                        <a href="#" class="link-block"></a>
+                    </div>
+                </div>
+                <div class="topbar-box">
+                    <div class="container">
+                        <!-- nav -->
+                        <div class="topbar-nav">
+                            <!-- rel: nofollow  告诉爬虫页面无需追踪-->
+                            <a rel="nofollow" href="../html/index.html" target="_blank">小米商城</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">MIUI</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">IoT</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">云服务</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">天星数科</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">有品</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">小爱开放平台</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">企业团购</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">资质证照</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">协议规则</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank" id="downLoadApp" class="topbar-download">下载app
+                                <span class="appcode">
+                                    <img src="../img/download.png" alt="小米商城" style="width: 90px;height: 90px;">
+                                    小米商城APP
+                                </span>
+                            </a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">智能生活</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">Select Location</a>
+                        </div>
+                        <!--  cart-->
+                        <!-- 鼠标划入之后给miniCartTrigger 添加类名 【topbar-cart-active】 -->
+                        <div id="miniCartTrigger" class="topbar-cart">
+                            <a rel="nofollow" id="miniCartBtn" class="mini-cart" href="../html/shoppingCart.html">
+                                <em class="iconfont icon-gouwuche"></em>
+                                <em class="iconfont-cart-full hide"></em>
+                                购物车
+                                <span class="mini-cart-num cartNum">(0)</span>
+                            </a>
+                            <!-- 购物车二级部分 -->
+                            <div id="miniCartMenu" class="cart-menu">
+                                <div class="menu-content">
+                                    <div class="loading">
+                                        <div class="loader">
+                                        </div>
+                                    </div>
+                                    <ul id="miniCartList" class="cart-list hide"></ul>
+                                    <div id="miniCartListTotal" class="cart-total clearfix hide"></div>
+                                    <div class="msg msg-error hide"></div>
+                                    <div class="msg msg-empty">购物车中还没有商品，赶紧选购吧！</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 用户信息部分（登录/注册/消息通知） -->
+                        <div id="userInfo" class="topbar-info">
+                            <!-- 登录/注册 -->
+                            <a rel="nofollow" class="link" href="../html/login.html">登录</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" class="link" href="../html/register.html">注册</a>
+                            <span class="seg">|</span>
+                            <!-- 消息通知 -->
+                            <span class="message">
+                                <a rel="nofollow" class="needAgreement" href="#">
+                                    消息通知
+                                    <i class="miMessageTotal"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 商品系列导航 -->
+                <div class="site-header">
+                    <div class="container">
+                        <!-- logo -->
+                        <div class="header-logo">
+                            <a href="../html/index.html" title="小米官网" class="logo ir">
+                            </a>
+                        </div>
+                        <!-- nav -->
+                        <div class="header-nav">
+                            <ul class="nav-list navMainList clearfix">
+                                <!-- 导航商品分类 -->
+                                <li id="navClassify" class="nav-classify">
+                                    <a href="#" class="link-classify">
+                                        <span class="text">全部商品分类</span>
+                                    </a>
+                                    <!-- 主要二级导航 -->
+                                    <div class="site-classify" style="display: block;">
+                                        <ul id="classifyList"
+                                            class="site-classify-list site-classify-list-custom clearfix">
+                                            <li class="classify-item">
+                                                <a href="#" class="title">手机 电话卡
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                            <li class="classify-item">
+                                                <a href="#" class="title">电视 盒子
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                            <li class="classify-item">
+                                                <a href="#" class="title">笔记本 显示器
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                            <li class="classify-item">
+                                                <a href="#" class="title">家电 插线板
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                            <li class="classify-item">
+                                                <a href="#" class="title">出行 穿戴
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                            <li class="classify-item">
+                                                <a href="#" class="title">智能 路由器
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                            <li class="classify-item">
+                                                <a href="#" class="title">电源 配件
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                            <li class="classify-item">
+                                                <a href="#" class="title">健康 儿童
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                            <li class="classify-item">
+                                                <a href="#" class="title">耳机 音响
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                            <li class="classify-item">
+                                                <a href="#" class="title">生活 箱包
+                                                    <em class="iconfont icon-ic_arrow_r"></em>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li data-index="0" class="nav-item">
+                                    <a href="" class="link">
+                                        <span class="text">小米手机</span>
+                                    </a>
+                                </li>
+                                <li data-index="1" class="nav-item">
+                                    <a href="" class="link">
+                                        <span class="text">Redmi 红米</span>
+                                    </a>
+                                </li>
+                                <li data-index="2" class="nav-item">
+                                    <a href="" class="link">
+                                        <span class="text">电视</span>
+                                    </a>
+                                </li>
+                                <li data-index="3" class="nav-item">
+                                    <a href="" class="link">
+                                        <span class="text">笔记本</span>
+                                    </a>
+                                </li>
+                                <li data-index="4" class="nav-item">
+                                    <a href="" class="link">
+                                        <span class="text">家电</span>
+                                    </a>
+                                </li>
+                                <li data-index="5" class="nav-item">
+                                    <a href="" class="link">
+                                        <span class="text">路由器</span>
+                                    </a>
+                                </li>
+                                <li data-index="6" class="nav-item">
+                                    <a href="" class="link">
+                                        <span class="text">智能硬件</span>
+                                    </a>
+                                </li>
+                                <li data-index="7" class="nav-item">
+                                    <a href="" class="link">
+                                        <span class="text">服务</span>
+                                    </a>
+                                </li>
+                                <li data-index="8" class="nav-item">
+                                    <a href="" class="link">
+                                        <span class="text">社区</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- search -->
+                        <div class="header-search">
+                            <form id="searchForm" class="search-form clearfix" action="">
+                                <label for="search" class="hide" style="display: none;">站内搜索</label>
+                                <a href="" class="no-style-msq">
+                                    <!--  搜索框 -->
+                                    <input type="search" id="search" name="keyword" class="search-text"
+                                        placeholder="笔记本">
+                                </a>
+                                <!-- 提交按钮 -->
+                                <a id="submitBtn" href="#" class="no-style-msq">
+                                    <div class="iconfont icon-fangdajing"></div>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 轮播图部分 -->
+        <div class="home-hero-container container">
+            <div class="home-hero">
+                <div id="homeSwiper" class="swiper-container home-hero-swiper swiper-container-fade">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                        <div class="swiper-slide" style="width: 1226px; transition-duration: 0ms; opacity: 0;">
+                            <a href="" target="_blank">
+                                <img class="swiper-lazy swiper-lazy-loaded"
+                                    src="../img/9ebff5f5c1f52f2dbdd611897adbefd4.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 1226px; transition-duration: 0ms; opacity: 0;">
+                            <a href="" target="_blank">
+                                <img class="swiper-lazy swiper-lazy-loaded"
+                                    src="../img/921811dd1557b9baa907cb828c1286af.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 1226px; transition-duration: 0ms; opacity: 0;">
+                            <a href="" target="_blank">
+                                <img class="swiper-lazy swiper-lazy-loaded"
+                                    src="../img/0ef4160c861b998239bce9adb82341e7.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 1226px; transition-duration: 0ms; opacity: 0;">
+                            <a href="" target="_blank">
+                                <img class="swiper-lazy swiper-lazy-loaded"
+                                    src="../img/9e7bd1f48d954cdf122b51ce0a8374b3.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 轮播底部分页按钮 -->
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                        <a class="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
+                        <a class="swiper-pagination-bullet"></a>
+                        <a class="swiper-pagination-bullet"></a>
+                        <a class="swiper-pagination-bullet"></a>
+                    </div>
+
+                    <!-- 轮播左右控制按键 -->
+                    <!-- 左按钮 -->
+                    <div class="swiper-btn-prev"></div>
+                    <!-- 右按钮 -->
+                    <div class="swiper-btn-next"></div>
+                </div>
+                <!-- home-hero-sub -->
+                <div class="home-hero-sub row">
+                    <!-- 左边导航块 -->
+                    <div class="span4">
+                        <ul class="home-channel-list clearfix">
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="../img/82abdba456e8caaea5848a0cddce03db.png" alt="小米秒杀">
+                                    小米秒杀
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="../img/806f2dfb2d27978e33fe3815d3851fa3.png" alt="企业团购">
+                                    企业团购
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="../img/eded6fa3b897a058163e2485532c4f10.png" alt="F码通道">
+                                    F码通道
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="../img/43a3195efa6a3cc7662efed8e7abe8bf.png" alt="米粉卡">
+                                    米粉卡
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="../img/f4846bca6010a0deb9f85464409862af.png" alt="以旧换新">
+                                    以旧换新
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <img src="../img/9a76d7636b08e0988efb4fc384ae497b.png" alt="话费充值">
+                                    话费充值
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 右边产品块 -->
+                    <div class="span16">
+                        <ul id="homePromoList" class="home-promo-list clearfix">
+                            <li class="first">
+                                <a href="#" target="_blank">
+                                    <img src="../img/e5f20a62c3d5b3d6806bd51ab6c5dd12.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="../img/8a43378b96501d7e227a9018fe2668c5.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="../img/793913688bfaee26b755a0b0cc8575fd.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主体部分 -->
+        <div class="page-main home-main">
+            <div class="container">
+                <!-- 秒杀商品轮播部分 -->
+                <div class="home-flashsale xm-plian-box">
+                    <!-- 闪购标题 -->
+                    <div class="box-hd">
+                        <h2 class="title">小米闪购</h2>
+                    </div>
+                    <!-- 闪购内容 -->
+                    <div class="box-body clearfix">
+                        <div class="row">
+                            <!-- 闪购专场倒计时 -->
+                            <div class="flashsale-countdown rainbow-item-4 span4">
+                                <div class="round">20:00 场</div>
+                                <img src="" alt="小米闪购">
+                                <div class="desc">本场已结束</div>
+                                <!-- 倒计时 -->
+                                <div class="countdown">
+                                    <span>00</span>
+                                    <i>:</i>
+                                    <span>00</span>
+                                    <i>：</i>
+                                    <span>00</span>
+                                </div>
+                            </div>
+                            <!-- 闪购商品列表 -->
+                            <div id="flashSaleList"
+                                class="span16 flashsale-list swiper-container swiper-no-swiping swiper-container-initialized swiper-container-horizontal">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-1">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/fbe8a3739b1b0297c0719ed751a5e4f2.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    米家两门冰箱 160L 银色
+                                                </h3>
+                                                <p class="desc">
+                                                    小巧能装，速冻养鲜
+                                                </p>
+                                                <p class="price">
+                                                    <span>899</span>元
+                                                    <del>1099元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-2">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/f607feb5f31aa04949d530799d010d99.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    RedmiBook 16 i7 16G 512G MX350 灰色
+                                                </h3>
+                                                <p class="desc">
+                                                    便携大屏，全“芯”超越
+                                                </p>
+                                                <p class="price">
+                                                    <span>5499</span>元
+                                                    <del>5699元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-3">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/5b75694b91fe4964d8888a046b83ed5f.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    米家飞利浦读写台灯 白色
+                                                </h3>
+                                                <p class="desc">
+                                                    双重防眩光，专为读写而生
+                                                </p>
+                                                <p class="price">
+                                                    <span>399</span>元
+                                                    <del>569元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-4">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/b3ffb3f8e0ac666038cc8f0d209dc69d.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    米家投影仪 青春版2 白色
+                                                </h3>
+                                                <p class="desc">
+                                                    实时自动对焦
+                                                </p>
+                                                <p class="price">
+                                                    <span>2399</span>元
+                                                    <del>2599元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-5">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/7827f0294b27dddf5c696cb7c9c36b76.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    小米无线鼠标 Lite 黑色
+                                                </h3>
+                                                <p class="desc">
+                                                    简约设计，轻盈握感
+                                                </p>
+                                                <p class="price">
+                                                    <span>29</span>元
+                                                    <del>39元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-6">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/7cb4374160086d2ee9ed43d681790eb4.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    Redmi智能电视A43 黑色 43英寸
+                                                </h3>
+                                                <p class="desc">
+                                                    系统全新升级，懂内容，也懂你
+                                                </p>
+                                                <p class="price">
+                                                    <span>1299</span>元
+                                                    <del>1399元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-7">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/7e66564fa6d2f150288b4f194599b222.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    米兔儿童学习手表4X 粉色
+                                                </h3>
+                                                <p class="desc">
+                                                    米兔儿童学习手表4X
+                                                </p>
+                                                <p class="price">
+                                                    <span>579</span>元
+                                                    <del>599元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-8">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/2ae803bf36843c25798938c4a8c9f77a.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    米家声波电动牙刷T500 蓝色
+                                                </h3>
+                                                <p class="desc">
+                                                    刷的干净、智能护齿
+                                                </p>
+                                                <p class="price">
+                                                    <span>189</span>元
+                                                    <del>199元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-9">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/036a31c8c6b42d14626dcb2ea7ab41e7.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    RedmiBook Air 13 I5/8G/512G/2.5K100%sRGB 灰色
+                                                </h3>
+                                                <p class="desc">
+                                                    轻盈便携 | 轻松办公
+                                                </p>
+                                                <p class="price">
+                                                    <span>4499</span>元
+                                                    <del>4899元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-10">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/8a5313c45132daa64096f9885be9fb20.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    小米智能门锁 霸王锁体 磨砂金
+                                                </h3>
+                                                <p class="desc">
+                                                    适配霸王锁体，多种开锁方式
+                                                </p>
+                                                <p class="price">
+                                                    <span>1399</span>元
+                                                    <del>1799元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-11">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    Redmi电视 R70A 70英寸
+                                                </h3>
+                                                <p class="desc">
+                                                    70英寸震撼巨屏，4K画质，细腻如真
+                                                </p>
+                                                <p class="price">
+                                                    <span>3299</span>元
+                                                    <del>3799元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-12">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/4c62c263dd80e807c0e1b2f67c74454c.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    小米笔记本Pro 15.6" 2019款 四核i5 8G MX250 512GB 深空灰
+                                                </h3>
+                                                <p class="desc">
+                                                    i5处理器 新一代独立显卡
+                                                </p>
+                                                <p class="price">
+                                                    <span>5199</span>元
+                                                    <del>5899元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-13">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/dd2814f521a50ed61473ad29a262c698.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    琴岛智能除螨电热毯 150*80
+                                                </h3>
+                                                <p class="desc">
+                                                    智能控温 除潮除螨
+                                                </p>
+                                                <p class="price">
+                                                    <span>125</span>元
+                                                    <del>149元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-14">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/2c3655eac76c7df20247635f4dff4b84.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    HITH智能足浴按摩器
+                                                </h3>
+                                                <p class="desc">
+                                                    智能养生，足浴黑科技
+                                                </p>
+                                                <p class="price">
+                                                    <span>299</span>元
+                                                    <del>399元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide swiper-slide-active  rainbow-item-1">
+                                        <a href="#" target="_blank">
+                                            <div class="content">
+                                                <!-- 产品 图片 -->
+                                                <div class="product-box">
+                                                    <img src="../img/fbe8a3739b1b0297c0719ed751a5e4f2.webp" alt="">
+                                                </div>
+                                                <!-- 产品名 -->
+                                                <h3 class="title">
+                                                    米家两门冰箱 160L 银色
+                                                </h3>
+                                                <p class="desc">
+                                                    小巧能装，速冻养鲜
+                                                </p>
+                                                <p class="price">
+                                                    <span>899</span>元
+                                                    <del>1099元</del>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 轮播控制按钮 -->
+                            <div class="swiper-controls">
+                                <span class="swiper-flashsale-prev swiper-btn-disabled">
+                                    <i class="iconfont icon-zuojiantou"></i>
+                                </span>
+                                <span class="swiper-flashsale-next">
+                                    <i class="iconfont icon-ic_arrow_r"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主体banners-->
+                <div class="home-banner-box">
+                    <a href="#">
+                        <img src="../img/a59db7dac2804ee2b5c7be1b02b3770e.webp" alt="" lazy="loaded">
+                    </a>
+                </div>
+                <!-- 主页分类商品区块部分 -->
+                <div class="home-brick-box home-brick-row-2-box xm-plain-box">
+                    <!-- 区块头部 -->
+                    <div class="box-hd">
+                        <!-- 标题 -->
+                        <h2 class="title">手机</h2>
+                        <!-- 更多 -->
+                        <div class="more">
+                            <a href="#" class="more-link">
+                                查看全部
+                                <i class="iconfont icon-youjiantou-tianchong"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 区块主体 -->
+                    <div class="box-body clearfix">
+                        <div class="row">
+                            <div class="span4">
+                                <ul class="brick-promo-list clearfix">
+                                    <li class="mobile-products mobile-products-left">
+                                        <a href="">
+                                            <img src="../img/cb1bd61ad71c45a4f67f09b075463944.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span16">
+                                <ul class="brick-list clearfix">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主体banners-->
+                <div class="home-banner-box">
+                    <a href="#">
+                        <img src="../img/c3b86ede4dd31d7c126d56fbdde4f855.webp" alt="" lazy="loaded">
+                    </a>
+                </div>
+                <!-- 主页分类商品区块部分 -->
+                <div class="home-brick-box home-brick-row-2-box xm-plain-box">
+                    <!-- 区块头部 -->
+                    <div class="box-hd">
+                        <!-- 标题 -->
+                        <h2 class="title">家电</h2>
+                        <!-- 更多 -->
+                        <div class="more">
+                            <ul class="tab-list">
+                                <li class="tab-active">热门</li>
+                                <li>电视影音</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 区块主体 -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="span4">
+                                <ul class="brick-promo-list clearfix">
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/45c4de5f15f6dc9946e5d0827fd96d71.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/7e03c0fe4af4d613603f22aaa8e0ea00.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span16">
+                                <div>
+                                    <ul class="brick-promo-list clearfix">
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 最后一块小的部分 -->
+                                        <div>
+                                            <li class="mobile-products mobile-products-small">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/7e5f89adf98ab3fccb34012b5209cd58.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">米家互联网烟灶套装（天然气）</h3>
+                                                    <p class="price">
+                                                        <span class="num">2298</span>元
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 更多部分 -->
+                                        <li class="mobile-products mobile-products-small">
+                                            <a href="#">
+                                                <div class="product product-more">
+                                                    <i class="iconfont icon-youjiantou"></i>
+                                                </div>
+                                                <div class="more">
+                                                    浏览更多
+                                                    <small>热门</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主体banners-->
+                <div class="home-banner-box">
+                    <a href="#">
+                        <img src="../img/59e8fc8ba9718c266882719fb4bbcedd.webp" alt="" lazy="loaded">
+                    </a>
+                </div>
+                <!-- 主页分类商品区块部分 -->
+                <div class="home-brick-box home-brick-row-2-box xm-plain-box">
+                    <!-- 区块头部 -->
+                    <div class="box-hd">
+                        <!-- 标题 -->
+                        <h2 class="title">智能</h2>
+                        <!-- 更多 -->
+                        <div class="more">
+                            <ul class="tab-list">
+                                <li class="tab-active">热门</li>
+                                <li>安防</li>
+                                <li>出行</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 区块主体 -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="span4">
+                                <ul class="brick-promo-list clearfix">
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/ffe114f73fac3a45e5622c3eff56106b.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/a660ce095e8f553a9ed1515265f4e9fc.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span16">
+                                <div>
+                                    <ul class="brick-promo-list clearfix">
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/e7c6e79433c883e1a022ec21402c1679.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 最后一块小的部分 -->
+                                        <div>
+                                            <li class="mobile-products mobile-products-small">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/f10b003b4ff46c59f5736e8f324af034.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">米家空气净化器Pro</h3>
+                                                    <p class="price">
+                                                        <span class="num">1299</span>元
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 更多部分 -->
+                                        <li class="mobile-products mobile-products-small">
+                                            <a href="#">
+                                                <div class="product product-more">
+                                                    <i class="iconfont icon-youjiantou"></i>
+                                                </div>
+                                                <div class="more">
+                                                    浏览更多
+                                                    <small>热门</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主体banners-->
+                <div class="home-banner-box">
+                    <a href="#">
+                        <img src="../img/01cc6a570d32a2ee09a2d5c2009a9968.webp" alt="" lazy="loaded">
+                    </a>
+                </div>
+                <!-- 主页分类商品区块部分 -->
+                <div class="home-brick-box home-brick-row-2-box xm-plain-box">
+                    <!-- 区块头部 -->
+                    <div class="box-hd">
+                        <!-- 标题 -->
+                        <h2 class="title">智能</h2>
+                        <!-- 更多 -->
+                        <div class="more">
+                            <ul class="tab-list">
+                                <li class="tab-active">热门</li>
+                                <li>耳机音箱</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 区块主体 -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="span4">
+                                <ul class="brick-promo-list clearfix">
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/6874615b3c50e837ffe532eb6ea4ef1a.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/a00bdd568dbc2b02f8fe0fa8d1b46f28.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span16">
+                                <div>
+                                    <ul class="brick-promo-list clearfix">
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/e7c6e79433c883e1a022ec21402c1679.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 最后一块小的部分 -->
+                                        <div>
+                                            <li class="mobile-products mobile-products-small">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/9946e252a7c49662376c056ced004a20.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">小米小爱触屏音响</h3>
+                                                    <p class="price">
+                                                        <span class="num">199</span>元
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 更多部分 -->
+                                        <li class="mobile-products mobile-products-small">
+                                            <a href="#">
+                                                <div class="product product-more">
+                                                    <i class="iconfont icon-youjiantou"></i>
+                                                </div>
+                                                <div class="more">
+                                                    浏览更多
+                                                    <small>热门</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主体banners-->
+                <div class="home-banner-box">
+                    <a href="#">
+                        <img src="../img/1615d1842fe85914a545297836a44271.webp" alt="" lazy="loaded">
+                    </a>
+                </div>
+                <!-- 主页分类商品区块部分 -->
+                <div class="home-brick-box home-brick-row-2-box xm-plain-box">
+                    <!-- 区块头部 -->
+                    <div class="box-hd">
+                        <!-- 标题 -->
+                        <h2 class="title">智能</h2>
+                        <!-- 更多 -->
+                        <div class="more">
+                            <ul class="tab-list">
+                                <li class="tab-active">热门</li>
+                                <li>充电器</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 区块主体 -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="span4">
+                                <ul class="brick-promo-list clearfix">
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/9f64bbd58c3f5001bdf0688894f22cb6.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/ffe4182f1d9a5befdf2380ec90ae1620.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span16">
+                                <div>
+                                    <ul class="brick-promo-list clearfix">
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/f8fde8a877fd4b12ad88119d9b6bc061.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 最后一块小的部分 -->
+                                        <div>
+                                            <li class="mobile-products mobile-products-small">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/f10b003b4ff46c59f5736e8f324af034.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">米家空气净化器Pro</h3>
+                                                    <p class="price">
+                                                        <span class="num">1299</span>元
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 更多部分 -->
+                                        <li class="mobile-products mobile-products-small">
+                                            <a href="#">
+                                                <div class="product product-more">
+                                                    <i class="iconfont icon-youjiantou"></i>
+                                                </div>
+                                                <div class="more">
+                                                    浏览更多
+                                                    <small>热门</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主体banners-->
+                <div class="home-banner-box">
+                    <a href="#">
+                        <img src="../img/9880db34d227b6c1df5b45cb7df4f465.webp" alt="" lazy="loaded">
+                    </a>
+                </div>
+                <!-- 主页分类商品区块部分 -->
+                <div class="home-brick-box home-brick-row-2-box xm-plain-box">
+                    <!-- 区块头部 -->
+                    <div class="box-hd">
+                        <!-- 标题 -->
+                        <h2 class="title">智能</h2>
+                        <!-- 更多 -->
+                        <div class="more">
+                            <ul class="tab-list">
+                                <li class="tab-active">热门</li>
+                                <li>出行</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 区块主体 -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="span4">
+                                <ul class="brick-promo-list clearfix">
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/942985dc060f9274bdd1be4b02f1d7ef.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                    <li class="mobile-products mobile-products-m">
+                                        <a href="#" target="_blank">
+                                            <img src="../img/ca0940f052227d235e7de5678d106c89.webp" alt=""
+                                                lazy="loaded">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span16">
+                                <div>
+                                    <ul class="brick-promo-list clearfix">
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/f8fde8a877fd4b12ad88119d9b6bc061.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class=" mobile-products-m-2 mobile-products mobile-products-m">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/dac6cb0f7d78eb6d844882e45abcb8d6.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                                    <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                                    <p class="price">
+                                                        <span class="num">3299</span>元
+                                                        <del>
+                                                            <span class="num">3799</span>元
+                                                        </del>
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 最后一块小的部分 -->
+                                        <div>
+                                            <li class="mobile-products mobile-products-small">
+                                                <a href="#">
+                                                    <div class="product product-img">
+                                                        <img src="../img/c1062daf42a1a5b2a9108510ecf83d0b.webp" alt=""
+                                                            lazy="loaded">
+                                                    </div>
+                                                    <h3 class="title">米家空气净化器Pro</h3>
+                                                    <p class="price">
+                                                        <span class="num">1299</span>元
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- 更多部分 -->
+                                        <li class="mobile-products mobile-products-small">
+                                            <a href="#">
+                                                <div class="product product-more">
+                                                    <i class="iconfont icon-youjiantou"></i>
+                                                </div>
+                                                <div class="more">
+                                                    浏览更多
+                                                    <small>热门</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主体banners-->
+                <div class="home-banner-box">
+                    <a href="#">
+                        <img src="../img/88e35cffc82cd98cd53172460067af17.webp" alt="" lazy="loaded">
+                    </a>
+                </div>
+                <!-- 视频列表部分 -->
+                <div class="home-video-box xm-plain-box">
+                    <div class="box-hd">
+                        <h2 class="title">视频</h2>
+                        <div class="more">
+                            <a href="#" class="more-link">
+                                查看全部
+                                <i class="iconfont .icon-youjiantou-tianchong"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-body clearfix">
+                        <ul class="video-list clearfix">
+                            <li class="video-item">
+                                <a href="#" title="点击播放视频">
+                                    <div class="product product-img">
+                                        <img src="../img/101b19aca4bb489bcef0f503e44ec866.webp" alt="Redmi 10X系列发布会"
+                                            lazy="loaded">
+                                        <span class="play">
+                                            <i class="iconfont icon-arrow_right_fat"></i>
+                                        </span>
+                                    </div>
+                                    <h3 class="title">Redmi 10X系列发布会</h3>
+                                    <p class="desc">Redmi 10X系列发布会</p>
+                                </a>
+                            </li>
+                            <li class="video-item">
+                                <a href="#" title="点击播放视频">
+                                    <div class="product product-img">
+                                        <img src="../img/96563e75833ba4563bd469dd28203b09.webp" alt="小米10 青春版 发布会"
+                                            lazy="loaded">
+                                        <span class="play">
+                                            <i class="iconfont icon-arrow_right_fat "></i>
+                                        </span>
+                                    </div>
+                                    <h3 class="title">小米10 青春版 发布会</h3>
+                                </a>
+                            </li>
+                            <li class="video-item">
+                                <a href="#" title="点击播放视频">
+                                    <div class="product product-img">
+                                        <img src="../img/2fd26bb99b723337a2f8eaba84f7d5bb.webp" alt="小米10 8K手机拍大片"
+                                            lazy="loaded">
+                                        <span class="play">
+                                            <i class="iconfont icon-arrow_right_fat "></i>
+                                        </span>
+                                    </div>
+                                    <h3 class="title">小米10 8K手机拍大片</h3>
+                                </a>
+                            </li>
+                            <li class="video-item">
+                                <a href="#" title="点击播放视频">
+                                    <div class="product product-img">
+                                        <img src="../img/a8dd25cab48c60fc6387b9001eddc3f9.webp" alt="小米10发布会"
+                                            lazy="loaded">
+                                        <span class="play">
+                                            <i class="iconfont icon-arrow_right_fat "></i>
+                                        </span>
+                                    </div>
+                                    <h3 class="title">小米10发布会</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div>
+            <!-- 首页底部链接部分 -->
+            <div class="site-footer">
+                <div class="container">
+                    <!-- 底部服务区块 -->
+                    <div class="footer-service">
+                        <ul class="list-service clearfix">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <em class="iconfont icon-buoumaotubiao46"></em>
+                                    预约维修服务
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <em class="iconfont icon-7tiantuihuanhuo"></em>
+                                    7天无理由退货
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <em class="iconfont icon-15tianwuliyoutuihuo"></em>
+                                    15天免费换货
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <em class="iconfont icon-jibenicon_liwu"></em>
+                                    满99元包邮
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <em class="iconfont icon-dingwei"></em>
+                                    520余家售后网点
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 底部链接区块 -->
+                    <div class="footer-links clearfix">
+                        <dl class="col-links col-links-first">
+                            <dt>帮助中心</dt>
+                            <dd>
+                                <a href="#" target="_blank">账户管理</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">购物指南</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">订单操作</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>帮助中心</dt>
+                            <dd>
+                                <a href="#" target="_blank">账户管理</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">购物指南</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">订单操作</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>帮助中心</dt>
+                            <dd>
+                                <a href="#" target="_blank">账户管理</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">购物指南</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">订单操作</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>帮助中心</dt>
+                            <dd>
+                                <a href="#" target="_blank">账户管理</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">购物指南</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">订单操作</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">账户管理</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">购物指南</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>帮助中心</dt>
+                            <dd>
+                                <a href="#" target="_blank">账户管理</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">购物指南</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">订单操作</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">账户管理</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>帮助中心</dt>
+                            <dd>
+                                <a href="#" target="_blank">账户管理</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">购物指南</a>
+                            </dd>
+                            <dd>
+                                <a href="#" target="_blank">订单操作</a>
+                            </dd>
+                        </dl>
+                        <div class="col-contact">
+                            <p class="phone">400-100-5678</p>
+                            <p>8:00-18:00（仅收市话费）</p>
+                            <a href="#" rel="nofollow" class="btn btn-line-primary btn-small contactBtn">
+                                <em class="iconfont icon-xinxi "></em>
+                                人工客服
+                            </a>
+                            <div class="follow">
+                                关注小米
+                                <a href="#" class="wb"></a>
+                                <a href="#" class="wx"></a>
+                                <img id="followWxImg" class="wx-img" src="../img/wx-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 首页底部信息部分 -->
+            <div class="site-info">
+                <div class="container">
+                    <div class="logo ir">小米官网</div>
+                    <div class="infotext">
+                        <p class="sites">
+                            <a rel="nofollow" href="../html/index.html" target="_blank">小米商城</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">MIUI</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">IoT</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">云服务</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">天星数科</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">有品</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">小爱开放平台</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">企业团购</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">资质证照</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">协议规则</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">智能生活</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">Select Location</a>
+                        </p>
+                        <p class="sites">
+                            <a rel="nofollow" href="" target="_blank">北京互联网法院法律服务工作站</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">中国消费者协会</a>
+                            <span class="seg">|</span>
+                            <a rel="nofollow" href="" target="_blank">北京市消费者协会</a>
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.js" type="module"></script>
+</body>
+
+</html>

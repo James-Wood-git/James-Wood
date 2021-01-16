@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米-注册页</title>
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="zh_CN">
+    <!-- 加载浮层 -->
+    <div class="popup_mask" id="loadingMask">
+        <!-- 背景色 -->
+        <div class="bkc"></div>
+        <!-- loading图片 -->
+        <div class="mod_wrap loadingmask"></div>
+    </div>
+    <!-- 内容部分 -->
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="layout">
+                <div class="n-frame device-frame reg_frame" id="main_container">
+                    <div class="external_logo_area">
+                        <a href="#" class="milogo"></a>
+                    </div>
+                    <div class="title-item t_c">
+                        <h4 class="title_big30">注册小米账号</h4>
+                    </div>
+                    <div>
+                        <!-- 验证部分 -->
+                        <div class="regbox">
+                            <div class="phone_step1">
+                                <h4 class="tit_normal">国家/地区</h4>
+                                <div class="listwrap select-regions" _region="CN">
+                                    <div class="listtit reg-select-regions">
+                                        <div class="tits display_box c_b">
+                                            <p class="result-select-regions">中国</p>
+                                            <i class="icon_cirarr"></i>
+                                        </div>
+                                    </div>
+                                    <!-- 国家下拉菜单 -->
+                                    <div class="country-container-panel" style="display: none;">
+
+                                    </div>
+                                </div>
+                                <div class="region_tip_text">成功注册帐号后，国家/地区将不能被修改</div>
+                                <!-- 手机号验证部分 -->
+                                <h4 class="tit_normal">手机号码</h4>
+                                <div class="listwrap_inside_panel c_b">
+                                    <div class="inputbg">
+                                        <input type="hidden" class="select-regions-input" name="region" value="CN">
+                                        <label class="labelbox" for="">
+                                            <div class="cycode_box" id="select-cycode" _region="CN" _def_method="PH">
+                                                <div id="reg-phone-select-cty">
+                                                    <div class="tits display_box c_b">
+                                                        <p id="select-cycode-result">+86</p>
+                                                        <i class="icon_arrow"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="country-container-panel" style="display: none;">
+                                                </div>
+                                            </div>
+                                            <input type="tel" name="phone" data-type="PH" placeholder="请输入手机号码">
+                                        </label>
+                                    </div>
+                                    <div class="err_tip" style="display: none;">
+                                        <div class="dis_box">
+                                            <em class="icon-error"></em>
+                                            <span>手机号码格式错误</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 立即注册 -->
+                                <div class="fixed_bot mar_phone_dis1">
+                                    <input class="btn332 btn_reg_1 submit-step" data-to="phone-step2" type="submit"
+                                        value="立即注册">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 协议部分 -->
+                        <div class="privacy_box">
+                            <div class="msg">
+                                <label class="n_checked select-privacy" for="">
+                                    已阅读并同意：小米
+                                    <a href="#" class="inspect_link agreement_link" title="用户协议">用户协议</a>和
+                                    <a href="#" class="inspect_link privacy_link" title="隐私政策">隐私政策</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="n-footer">
+        <div class="nf-link-area clearfix">
+            <ul class="lang-select-list">
+                <li>
+                    <a href="#" class="lang-select-li current">简体</a>
+                    |
+                </li>
+                <li>
+                    <a href="#" class="lang-select-li">繁体</a>
+                    |
+                </li>
+                <li>
+                    <a href="#" class="lang-select-li">English</a>
+                </li>
+                |
+                <li>
+                    <a href="#" class="a_critical">常见问题</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nf-intro">
+            <span>
+                小米公司版权所有-京ICP备10046444-
+                <a href="#" class="beianlink beian-record-link">
+                    <span>
+                        <img src="../img/ghs.png" alt="">
+                    </span>
+                    京公网安备11010802020134号
+                </a>
+                -京ICP证110507号
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

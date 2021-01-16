@@ -1,0 +1,22 @@
+{
+  "name": "mi.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamHero18501371811/xiaomi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JamHero18501371811/xiaomi/issues"
+  },
+  "homepage": "https://github.com/JamHero18501371811/xiaomi#readme",
+  "description": ""
+}
